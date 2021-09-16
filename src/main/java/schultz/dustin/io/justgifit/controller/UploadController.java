@@ -31,7 +31,8 @@ public class UploadController {
         File videoFile = new File(location + "/" + System
                 .currentTimeMillis()+".mp4");
         file.transferTo(videoFile);
-        log.info("Saved file to {}", videoFile.getAbsolutePath());
+
+        log.info("Saved file to {}"+ videoFile.getAbsolutePath());
         return "";
 
     }
